@@ -65,8 +65,6 @@ def movies_with_directors_set(source)
       
       current_movie += 1
     end
-    p movie_hash
-    break
     i += 1 
   end
   
