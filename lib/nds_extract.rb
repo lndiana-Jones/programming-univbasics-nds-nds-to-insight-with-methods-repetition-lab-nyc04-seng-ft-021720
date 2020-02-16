@@ -83,7 +83,9 @@ test =[{:name=>"Stephen Spielberg",
      :worldwide_gross=>83471511,
      :release_year=>1979}]}]
      
-puts movies_with_directors_set(test)
+require 'pp'
+
+pp directors_database
 
 
      
