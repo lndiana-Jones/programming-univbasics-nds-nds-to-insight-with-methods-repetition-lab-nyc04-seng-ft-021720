@@ -77,9 +77,7 @@ def movies_with_directors_set(source)
   all_movies
 end
 
-require 'pp'
-
-pp directors_database
+movies_with_directors_set(directors_database)
 
 
      
