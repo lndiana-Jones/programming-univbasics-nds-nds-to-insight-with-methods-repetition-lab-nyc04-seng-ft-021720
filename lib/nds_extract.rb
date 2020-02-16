@@ -61,12 +61,13 @@ def movies_with_directors_set(source)
       movie_hash[:movie] = source[i][:movies][current_movie][:title]
       movie_hash[:director_name] = source[i][:name]
       movie_list << movie_hash
+      all_movies << movie_list
     current_movie += 1
     end
     
     i += 1 
   end
-  movie_list
+  all_movies
 end
 
 p movies_with_directors_set(directors_database)
