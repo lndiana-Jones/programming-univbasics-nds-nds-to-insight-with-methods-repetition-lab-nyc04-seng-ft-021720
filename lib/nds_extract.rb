@@ -66,7 +66,7 @@ def movies_with_directors_set(source)
       movie_list.push(movie_hash) # [:movie => title, director_name => name]
       all_movies.push(movie_list)
        #[[:movie => title, director_name => name], [:movie => title, director_name => name]]
-       count += 1
+       counter += 1
      end
       
       current_movie += 1
