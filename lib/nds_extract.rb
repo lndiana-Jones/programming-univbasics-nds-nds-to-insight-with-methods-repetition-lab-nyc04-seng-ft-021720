@@ -68,7 +68,7 @@ def movies_with_directors_set(source)
     break
     i += 1 
   end
-  movie_list
+  all_movies
 end
 
 p movies_with_directors_set(directors_database)
