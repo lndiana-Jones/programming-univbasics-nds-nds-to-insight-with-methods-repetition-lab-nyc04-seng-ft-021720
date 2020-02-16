@@ -50,8 +50,18 @@ def total_gross(source)
 end
 
 def movies_with_directors_set(source)
-
-
+  i = 0
+  movie_list_hash = {}
+  while i < source.length
+    name = source[i][:name]
+    current_movie = 0
+    while current_movie < source[i][:movies].length
+      
+    
+    current_movie += 1
+    end
+    i += 1 
+  end 
 end
 
 test =[{:name=>"Stephen Spielberg",
