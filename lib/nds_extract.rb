@@ -71,7 +71,7 @@ def movies_with_directors_set(source)
       
       current_movie += 1
     end
-    break
+    
     i += 1 
   end
   all_movies
