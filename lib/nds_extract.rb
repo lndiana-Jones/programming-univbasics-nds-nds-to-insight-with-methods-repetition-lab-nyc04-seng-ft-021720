@@ -51,51 +51,24 @@ end
 
 def movies_with_directors_set(source)
   i = 0
-  movie_list_hash = {}
+  movie_list = []
+  all_movies = []
   while i < source.length
     name = source[i][:name]
     current_movie = 0
     while current_movie < source[i][:movies].length
-      
-    
+      movie_hash = {}
+      movie_hash[:movie] = source[i][:movies][current_movie][title]
+      movie_hash[:director_name] = source[i][:name]
+      p movie_hash
     current_movie += 1
     end
+    
     i += 1 
   end 
 end
 
-test =[{:name=>"Stephen Spielberg",
-  :movies=>
-   [{:title=>"Jaws",
-     :studio=>"Universal",
-     :worldwide_gross=>260000000,
-     :release_year=>1975},
-    {:title=>"Close Encounters of the Third Kind",
-     :studio=>"Columbia",
-     :worldwide_gross=>135189114,
-     :release_year=>1977},
-    {:title=>"Raiders of the Lost Ark",
-     :studio=>"Paramount",
-     :worldwide_gross=>248159971,
-     :release_year=>1981},
-    {:title=>"E.T. the Extra-terrestrial",
-     :studio=>"Universal",
-     :worldwide_gross=>435110554,
-     :release_year=>1982}]},
-     {:name=>"Francis Ford Coppola",
-  :movies=>
-   [{:title=>"The Godfather",
-     :studio=>"Paramount",
-     :worldwide_gross=>134966411,
-     :release_year=>1972},
-    {:title=>"Apocalypse Now",
-     :studio=>"MGM",
-     :worldwide_gross=>83471511,
-     :release_year=>1979}]}]
-     
-require 'pp'
-
-pp directors_database
+p movies_with_directors_set(directors_database)
 
 
      
