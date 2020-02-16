@@ -64,7 +64,7 @@ def movies_with_directors_set(source)
       break
       current_movie += 1
     end
-    
+    break
     i += 1 
   end
   movie_list
