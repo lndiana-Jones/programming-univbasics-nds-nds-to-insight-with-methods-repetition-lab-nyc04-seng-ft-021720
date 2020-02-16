@@ -62,7 +62,7 @@ def movies_with_directors_set(source)
       movie_hash[:director_name] = source[i][:name]
       movie_list << movie_hash
       
-    current_movie += 1
+      current_movie += 1
     end
     
     i += 1 
