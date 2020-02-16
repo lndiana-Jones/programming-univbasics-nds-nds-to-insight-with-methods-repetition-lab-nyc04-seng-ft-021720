@@ -68,7 +68,7 @@ def movies_with_directors_set(source)
    
     i += 1 
   end
-  all_movies
+  movie_hash
 end
 
 movies_with_directors_set(directors_database)
